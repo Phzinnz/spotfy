@@ -1,0 +1,103 @@
+@charset 'UTF-8';
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+header{
+    margin-bottom: 10px;
+}
+
+header > h1{
+      display: none;
+}
+
+header > label{
+    display: none;
+    
+}
+
+header > input{
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.459);
+    border: none ;
+    width: 60%;
+    height: 40px;
+    border-radius: 20px ;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+input:hover{
+    color: white;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.486);
+    font-size: 1.3em;
+}
+
+main > div.lateral > p#principal {
+    background-color: rgba(128, 128, 128, 0.459);
+    width:40%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: small;
+    text-align: center;
+}
+
+
+
+.lateral{
+    background-color: rgba(128, 128, 128, 0.459);
+    position: absolute;
+    display: block;
+    padding: 10px;
+    width: 45%;
+    height: 80vh;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
+.telaemcima{ 
+    background-image: linear-gradient(to top,black, rgba(255, 0, 0, 0.555));
+    padding:10px;
+    border-radius: 20px;
+    width:50vw;
+    height: 100vh;
+    margin-left:48%;
+}
+
+.telaemcima > p#principal{
+    display:inline-table;
+    background-color: white;
+    color:black;
+    width: 15%;
+    
+    border-radius: 20px;
+    font-size: small;
+    text-align: center;
+    
+   
+   
+
+}
+
+.telaemcima > p{
+    padding: 10px;
+    margin-top: 15px;
+}
+
+
+
