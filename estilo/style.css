@@ -13,7 +13,13 @@ body{
 }
 
 header{
+    display: flex;
     margin-bottom: 10px;
+    background-image: url(../imagens/spotify\ pequeno.png);
+    background-position: center center;
+    background-size: cover;
+    height: 50%;
+    width: 50%;
 }
 
 header > h1{
@@ -26,12 +32,12 @@ header > label{
 }
 
 header > input{
-    display: inline-block;
+    display: flex;
     position: relative;
     padding: 10px;
     background-color: rgba(128, 128, 128, 0.459);
     border: none ;
-    width: 60%;
+    width: 100%;
     height: 40px;
     border-radius: 20px ;
     margin-left: 10px;
@@ -46,6 +52,7 @@ input:hover{
 ::placeholder{
     color: rgba(255, 255, 255, 0.486);
     font-size: 1.3em;
+    text-align:justify;
 }
 
 main > div.lateral > p#principal {
@@ -77,27 +84,67 @@ main > div.lateral > p#principal {
     width:50vw;
     height: 100vh;
     margin-left:48%;
+    display: flex;
+    flex-flow: row nowrap;
+    
 }
 
-.telaemcima > p#principal{
-    display:inline-table;
+
+
+.telaemcima > p#aprincipal{
     background-color: white;
     color:black;
-    width: 15%;
-    
+    height: 5%;
+    width: 100%;
     border-radius: 20px;
     font-size: small;
     text-align: center;
+    justify-content: space-around;
+    flex: auto;
+    margin-bottom: 10px;
+    margin-right: 3px;
+    overflow: hidden;
     
-   
-   
-
 }
 
-.telaemcima > p{
-    padding: 10px;
-    margin-top: 15px;
+div.cantor{
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.021);
+    overflow: hidden;
+    
 }
 
 
+.cantor > h3{
+    display: flex;
+    font-size: 1em;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-align: justify;
+    
+    
+}
 
+.cantor > h3:hover{
+    background-color: rgba(255, 255, 255, 0.199);
+    
+    width: 110px;
+    
+}
+
+.cantor > img{
+  width: 100px;
+  
+    
+    
+}
+
+.cantor > img:hover{
+    background-color: white;
+    width: 50%;
+
+
+}
